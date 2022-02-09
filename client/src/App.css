@@ -1,0 +1,9 @@
+.naslovna{
+  height: 80vh;
+  background-size: cover;
+  margin: 30px 10%;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/72/NYC_-_New_York_City_Library_-_1723.jpg');
+}
+.bookCard{
+  height: 300px;
+}
