@@ -37,7 +37,7 @@ export default function Navbar(props: Props) {
         }
     }
     React.useEffect(() => {
-        axios.get('http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=civillight&output=json', { withCredentials: false }).then(value => {
+        axios.get('http://www.7timer.info/bin/api.pl?lon=20.463&lat=44.801&product=civillight&output=json', { withCredentials: false }).then(value => {
 
             setWeather({ ...value.data.dataseries[0] });
         }).catch(err => {

@@ -6,7 +6,6 @@ export function setFormState<T>(setState: (val: T) => void) {
     }
 }
 export function onTableRowClick<T>(val: T, setState: (setter: (prev: T | undefined) => T | undefined) => void) {
-
     setState(prev => {
         if (prev === val) {
             return undefined

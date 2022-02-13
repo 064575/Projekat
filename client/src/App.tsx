@@ -81,7 +81,6 @@ function App() {
     const res = await axios.post(SERVER + '/review', c as Review)
     const id = res.data.id;
     setBooks(prev => {
-
       return prev.map(element => {
         if (element.id === c.book?.id) {
           return {
@@ -91,9 +90,7 @@ function App() {
           }
         }
         return element;
-
       })
-
     })
   }
   const updateBook = (b: Book) => {
@@ -115,9 +112,7 @@ function App() {
   return (
     <>
       <Navbar full={user !== undefined} logout={() => { setUser(undefined) }} admin={user?.isAdmin} />
-      <div className='naslovna'>
 
-      </div>
       <Switch>
         <Route path='/login'>
           {user ? (

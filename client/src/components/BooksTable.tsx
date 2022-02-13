@@ -51,7 +51,6 @@ export default function BooksTable(props: Props) {
 
                             totalPages={totalPages} activePage={activePage}
                             onPageChange={(event, data) => {
-                                console.log(data);
                                 if (typeof data.activePage === 'string') {
 
                                     setActivePage(parseInt(data.activePage))

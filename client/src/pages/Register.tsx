@@ -33,7 +33,6 @@ export default function Register(props: Props) {
             })
             props.setUser(result.data);
         } catch (error) {
-            console.log(error);
         }
     }
     return (

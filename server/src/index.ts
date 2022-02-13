@@ -95,7 +95,7 @@ createConnection().then(async connection => {
     app.use((req, res, next) => {
         const user = (req.session as any).user;
         if (!user) {
-            res.sendStatus(403);
+            res.sendStatus(401);
         } else {
             next();
         }
